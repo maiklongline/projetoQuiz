@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class projetoPI {
+public class prototipoQuiz {
 
     public static void main(String[] args) {
 
@@ -41,7 +41,7 @@ public class projetoPI {
                     respE++;
                 }
             }
-            System.out.println("\n\n\n\n\n\n");
+            System.out.println("\n\n\n");
             if (i == 1) {
                 System.out.println(
                         "2.Qual animal é conhecido por ter a mordida mais forte em relação ao seu tamanho corporal?");
