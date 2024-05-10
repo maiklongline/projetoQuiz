@@ -1,52 +1,752 @@
 programa {
   funcao inicio() {
     //variaveis
-    inteiro respoC,respE
+    inteiro respC = 0,respE= 0, op
     real porc
-    caracter resp,op
+    caracter resp
 
     //atribuindo escolhas
     escreva("Bem vindo ao quiz:Reino Animal\n")
-    escreva("escolha sua dificuldade\n")
-    escreva("facil\n")
-    escreva("medio\n")
-    escreva("dificil\n")
+    escreva("Escolha sua dificuldade\n")
+    escreva("1) Fácil\n")
+    escreva("2) Médio\n")
+    escreva("3) Difícil\n")
     leia(op)
+    enquanto(op != 1 e op != 2 e op != 3 ){
+      escreva("Digite alguma das dificuldade!\n")
+      leia(op)
+    }
 
     escolha(op){
-      caso "facil":
-        para(inteiro i = 0; i < 9;i++){
-        se(i == 0){
-          escreva("Iniciando dificuldade f�cil")
+      //Facil
+      caso 1:
+          escreva("\nIniciando dificuldade fácil\n")
           escreva("1. Qual o maior mamifero terrestre?\n")
           escreva("a) Rinocerante-Branco\n")
           escreva("b) Elefante-Africano\n")
-          escreva("c) Hipop�tomo\n")
+          escreva("c) Hipopótomo\n")
           escreva("d) Girafa\n")
-          escreva("e) Le�o\n")
-          escreva("Qual a altenatica certa?\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
           leia(resp)
-          enquanto(resp == "a" e resp == "b" e resp == "c" e resp == "d" e resp == "e"){
-            escreva("digite alguma das alternativas!")
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
             leia(resp)
           }
 
-          se(resp == "b"){
-            escreva("resposta certa")
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }
+
+          escreva("\n\n\n")
+
+          escreva("2. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
             respC++
           }senao{
             escreva("Resposta errada")
             respE++
           }
           
-      } 
-      escreva("\n\n")
-        se(i == 1){
-          escreva("2. Qual animal � conhecido por ter a mordida mais forte em compara��o ao seu tamanho corporal?\n")
-          escreva("a)le�o\n")
-          escreva("tubar�o-branco\n")
-        }     
+          escreva("\n\n\n")
+
+          escreva("3. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }
+          
+          escreva("\n\n\n")
+
+          escreva("4. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }       
+          
+          escreva("\n\n\n")
+
+          escreva("5. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("6. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("7. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("8. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("9. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("10. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+
+          pare
+        caso 2:
+        //Medio
+          escreva("\nIniciando dificuldade Média\n")
+          escreva("1. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }
+
+          escreva("\n\n\n")
+
+          escreva("2. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }
+          
+          escreva("\n\n\n")
+
+          escreva("3. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }
+          
+          escreva("\n\n\n")
+
+          escreva("4. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }       
+          
+          escreva("\n\n\n")
+
+          escreva("5. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("6. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("7. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("8. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("9. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("10. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+
+          pare
+          caso 3:
+          //Dificil
+          escreva("\nIniciando dificuldade Difícil\n")
+          escreva("1. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }
+
+          escreva("\n\n\n")
+
+          escreva("2. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }
+          
+          escreva("\n\n\n")
+
+          escreva("3. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }
+          
+          escreva("\n\n\n")
+
+          escreva("4. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }       
+          
+          escreva("\n\n\n")
+
+          escreva("5. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("6. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("7. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("8. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("9. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+          
+          escreva("\n\n\n")
+
+          escreva("10. Qual o maior mamifero terrestre?\n")
+          escreva("a) Rinocerante-Branco\n")
+          escreva("b) Elefante-Africano\n")
+          escreva("c) Hipopótomo\n")
+          escreva("d) Girafa\n")
+          escreva("e) Leão\n")
+          escreva("Qual a alternativa certa?\n")
+          leia(resp)
+
+          enquanto(resp != "a" e resp != "b" e resp != "c" e resp != "d" e resp != "e" e resp != "A" e resp != "B" e resp != "C" e resp != "D" e resp != "E"){
+            escreva("Digite alguma das alternativas!\n")
+            leia(resp)
+          }
+
+          se(resp == "b" ou resp == "B"){
+            escreva("Resposta certa")
+            respC++
+          }senao{
+            escreva("Resposta errada")
+            respE++
+          }        
+
+          pare
+      }
+      escreva("\n\n\n")
+      escreva("Suas respostas certas foram " + respC + "\n")
+      escreva("Suas respostas erradas foram " + respE +"\n")
     }
     }
-  }
-}
