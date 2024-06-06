@@ -1,3 +1,4 @@
+package funbo;
 import java.util.Scanner;
 
 public class prototipoQuiz {
@@ -13,9 +14,12 @@ public class prototipoQuiz {
         System.out.println("Digite: Facil");
         System.out.println("Digite: Medio");
         System.out.println("Digite: Dificil");
-        op = scan.nextLine().toLowerCase();
-        op = op.replaceAll("á", "a").replaceAll("é", "e").replaceAll("í", "i")
-        .replaceAll("ó", "o").replaceAll("ú", "u");
+
+        do {
+            op = scan.nextLine().toLowerCase();
+            op = op.replaceAll("á", "a").replaceAll("é", "e").replaceAll("í", "i")
+            .replaceAll("ó", "o").replaceAll("ú", "u");
+            
         switch (op) {
             case "facil":
 
@@ -706,8 +710,8 @@ public class prototipoQuiz {
 		break;
 		default:
 			System.out.println("Insira uma das opções validas");
-			return;
-        }
+        	}
+        }while(!op.equals("facil") && !op.equals("medio") && !op.equals("dificil"));
 
 			if(respC>8){
 				System.out.println("Você foi muito bem");
@@ -720,4 +724,3 @@ public class prototipoQuiz {
 			System.out.println("RESPOSTAS CERTAS: "+respC+"\nRESPOSTAS ERRADAS:"+respE+"\nDIFICULDADE:"+op);
 	}
 }
-
